@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Валентина Петрова](https://up.htmlacademy.ru/htmlcss/14/user/242306).
-* Наставник: `Неизвестно`.
+* Наставник: [Natalya Loskutova] (https://up.htmlacademy.ru/htmlcss/14/user/33515).
 
 ---
 
