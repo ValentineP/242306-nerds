@@ -8,7 +8,7 @@
     <header class="main-header">
       <div class="container">
         <nav class="main-navigation">
-          <a href="#"><img src="http://placehold.it/140x57" width="140" height="57" alt="Дизайн-студия «Нёрдс»"></a>
+          <a href="#" class="logo"><img src="http://placehold.it/140x57" width="140" height="57" alt="Дизайн-студия «Нёрдс»"></a>
           <ul>
             <li>
               <a href="#">СТУДИЯ</a>
@@ -25,134 +25,144 @@
           </ul>
         </nav>
         <div class="user-block">
-          <a href="#">КОРЗИНА</a>          
+          <a href="#" class="basket">КОРЗИНА</a>          
         </div>
       </div>
     </header>
     <main>
-      <div class="container">
-        <div class="promo"><h1>Добро пожаловать в магазин готовых макетов</h1></div>
-        <div class="selection-category">
-          <form action="#">
-            <div class="price">
-              <h2>СТОИМОСТЬ</h2>
-              <div class="price-slider">
-                <div class="all-price">
-                  <div class="limited-price">
-                    <span class="min-price"></span>
-                    <span class="max-price"></span>
-                  </div>
-                </div>
-              </div>
-              <fieldset>
-                <label>ОТ<input type="text" name="price-from"></label>
-                <label>ДО<input type="text" name="price-to"></label>
-              </fieldset>
-              <h2>СЕТКА</h2>
-              <fieldset>
-                <ul class="grid-selection">
-                  <li><label><input type="radio" name="grid-type" value="adaptive"> Адаптивная</label></li>
-                  <li><label><input type="radio" name="grid-type" value="fixed"> Фиксированная</label></li>
-                  <li><label><input type="radio" name="grid-type" value="rubber"> Резиновая</label></li>
-                </ul>
-              </fieldset>
-              <h2>ОСОБЕННОСТИ</h2>
-              <fieldset>
-                <ul class="features-selection">
-                  <li><label><input type="checkbox" name="slider" > Слайдер</label></li>
-                  <li><label><input type="checkbox" name="advantage" > Блок преимуществ</label></li>
-                  <li><label><input type="checkbox" name="news" > Новости</label></li>
-                  <li><label><input type="checkbox" name="gallery" > Галерея</label></li>
-                  <li><label><input type="checkbox" name="basket" > Корзина</label></li>
-                </ul>
-              </fieldset>
-              <input type="submit" class="show-btn" value="Показать">  
-            </div>
-          </form>
-        </div>
-        <div class="sorter">
-          <div class="sortby">
-            <span>СОРТИРОВАТЬ</span>
-            <a href="#">ПО ЦЕНЕ</a>
-            <a href="#">ПО ТИПУ</a>
-            <a href="#">ПО ФУНКЦИОНАЛУ</a>
-          </div>
-          <div class="orderby">
-            <a href="#" class="desc"><img src="http://placehold.it/8x8" width="8" height="8" alt=""></a>
-            <a href="#" class="asc"><img src="http://placehold.it/8x8" width="8" height="8" alt=""></a>
-          </div>
-        </div>
-        <div class="catalog">
-          <div class="catalog-item">
-            <img src="http://placehold.it/200x200" width="200" height="200" alt="">
-            <div>
-              <h3 class="product-name"><a href="#">AVIATOR</a></h3>
-              <p class="product-descr">Описание товара</p>
-              <a href="#" class="product-buy-btn">10000 P.</a>
-            </div>
-          </div>
-          <div class="catalog-item">
-            <img src="http://placehold.it/200x200" width="200" height="200" alt="">
-            <div>
-              <h3 class="product-name"><a href="#">SUNSET</a></h3>
-              <p class="product-descr">Интернет-магазин с личным кабинетом</p>
-              <a href="#" class="product-buy-btn">10000 P.</a>
-            </div>
-          </div>
-          <div class="catalog-item">
-            <img src="http://placehold.it/200x200" width="200" height="200" alt="">
-            <div>
-              <h3 class="product-name"><a href="#">FORTE</a></h3>
-              <p class="product-descr">Описание товара</p>
-              <a href="#" class="product-buy-btn">10000 P.</a>
-            </div>
-          </div>
-          <div class="catalog-item">
-            <img src="http://placehold.it/200x200" width="200" height="200" alt="">
-            <div>
-              <h3 class="product-name"><a href="#">MODERN ORGANIC THAI</a></h3>
-              <p class="product-descr">Описание товара</p>
-              <a href="#" class="product-buy-btn">10000 P.</a>
-            </div>
-          </div>
-          <div class="catalog-item">
-            <img src="http://placehold.it/200x200" width="200" height="200" alt="">
-            <div>
-              <h3 class="product-name"><a href="#">AVENUE</a></h3>
-              <p class="product-descr">Описание товара</p>
-              <a href="#" class="product-buy-btn">10000 P.</a>
-            </div>
-          </div>
-          <div class="catalog-item">
-            <img src="http://placehold.it/200x200" width="200" height="200" alt="">
-            <div>
-              <h3 class="product-name"><a href="#">DOVETAIL</a></h3>
-              <p class="product-descr">Описание товара</p>
-              <a href="#" class="product-buy-btn">10000 P.</a>
-            </div>
-          </div>
-          <div class="paginator">
-            <ul>
-              <li><a class="prev-page-link" href="#">ПРЕДЫДУЩАЯ</a></li>
-              <li>1</li>
-              <li><a class="page-link" href="#">2</a></li>
-              <li><a class="page-link" href="#">3</a></li>
-              <li><a class="next-page-link" href="#">СЛЕДУЮЩАЯ</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="contacts">
+      <div class="promo">
+      	<div class="container">
+      		<h1>Добро пожаловать в магазин готовых макетов</h1>
+      	</div>
+		 	</div>
+      <div class="main-content">
+      	<div class="container">
+        	<div class="selection-category">
+          	<form action="#">
+            	<div class="price">
+              	<h2>СТОИМОСТЬ</h2>
+              	<div class="price-slider">
+                	<div class="all-price">
+                  	<div class="limited-price">
+                    	<span class="min-price"></span>
+                    	<span class="max-price"></span>
+                  	</div>
+                	</div>
+              	</div>
+              	<fieldset>
+                	<label>ОТ<input type="text" name="price-from"></label>
+                	<label>ДО<input type="text" name="price-to"></label>
+              	</fieldset>
+              	<h2>СЕТКА</h2>
+              	<fieldset>
+                	<ul class="grid-selection">
+                  	<li><label><input type="radio" name="grid-type" value="adaptive"> Адаптивная</label></li>
+                  	<li><label><input type="radio" name="grid-type" value="fixed"> Фиксированная</label></li>
+                  	<li><label><input type="radio" name="grid-type" value="rubber"> Резиновая</label></li>
+                	</ul>
+              	</fieldset>
+              	<h2>ОСОБЕННОСТИ</h2>
+              	<fieldset>
+                	<ul class="features-selection">
+                  	<li><label><input type="checkbox" name="slider" > Слайдер</label></li>
+                  	<li><label><input type="checkbox" name="advantage" > Блок преимуществ</label></li>
+                  	<li><label><input type="checkbox" name="news" > Новости</label></li>
+                  	<li><label><input type="checkbox" name="gallery" > Галерея</label></li>
+                  	<li><label><input type="checkbox" name="basket" > Корзина</label></li>
+                	</ul>
+              	</fieldset>
+              	<input type="submit" class="show-btn" value="Показать">  
+            	</div>
+          	</form>
+        	</div>
+        	<div class="catalog-container">
+        		<div class="sorter">
+          		<div class="sortby">
+            		<span>СОРТИРОВАТЬ</span>
+            		<a href="#">ПО ЦЕНЕ</a>
+            		<a href="#">ПО ТИПУ</a>
+            		<a href="#">ПО ФУНКЦИОНАЛУ</a>
+          		</div>
+          		<div class="orderby">
+            		<a href="#" class="desc"><img src="http://placehold.it/8x8" width="8" height="8" alt=""></a>
+            		<a href="#" class="asc"><img src="http://placehold.it/8x8" width="8" height="8" alt=""></a>
+          		</div>
+        		</div>
+        		<div class="catalog">
+          		<div class="catalog-item">
+            		<img src="http://placehold.it/200x200" width="200" height="200" alt="">
+            		<div class="product-card">
+              		<h3 class="product-name"><a href="#">AVIATOR</a></h3>
+              		<p class="product-descr">Описание товара</p>
+              		<a href="#" class="product-buy-btn">10000 P.</a>
+            		</div>
+          		</div>
+          		<div class="catalog-item">
+            		<img src="http://placehold.it/200x200" width="200" height="200" alt="">
+            		<div class="product-card">
+              		<h3 class="product-name"><a href="#">SUNSET</a></h3>
+              		<p class="product-descr">Интернет-магазин с личным кабинетом</p>
+              		<a href="#" class="product-buy-btn">10000 P.</a>
+            		</div>
+          		</div>
+          		<div class="catalog-item">
+            		<img src="http://placehold.it/200x200" width="200" height="200" alt="">
+            		<div class="product-card">
+              		<h3 class="product-name"><a href="#">FORTE</a></h3>
+              		<p class="product-descr">Описание товара</p>
+              		<a href="#" class="product-buy-btn">10000 P.</a>
+            		</div>
+          		</div>
+          		<div class="catalog-item">
+            		<img src="http://placehold.it/200x200" width="200" height="200" alt="">
+            		<div class="product-card">
+              		<h3 class="product-name"><a href="#">MODERN ORGANIC THAI</a></h3>
+              		<p class="product-descr">Описание товара</p>
+              		<a href="#" class="product-buy-btn">10000 P.</a>
+            		</div>
+          		</div>
+          		<div class="catalog-item">
+            		<img src="http://placehold.it/200x200" width="200" height="200" alt="">
+            		<div class="product-card">
+              		<h3 class="product-name"><a href="#">AVENUE</a></h3>
+              		<p class="product-descr">Описание товара</p>
+              		<a href="#" class="product-buy-btn">10000 P.</a>
+            		</div>
+          		</div>
+          		<div class="catalog-item">
+            		<img src="http://placehold.it/200x200" width="200" height="200" alt="">
+            		<div class="product-card">
+              		<h3 class="product-name"><a href="#">DOVETAIL</a></h3>
+              		<p class="product-descr">Описание товара</p>
+              		<a href="#" class="product-buy-btn">10000 P.</a>
+            		</div>
+          		</div>
+          		<div class="paginator">
+            		<ul>
+              		<li><a class="prev-page-link" href="#">ПРЕДЫДУЩАЯ</a></li>
+              		<li><a>1</a></li>
+              		<li><a class="page-link" href="#">2</a></li>
+              		<li><a class="page-link" href="#">3</a></li>
+              		<li><a class="next-page-link" href="#">СЛЕДУЮЩАЯ</a></li>
+            		</ul>
+          		</div>
+        		</div>
+      		</div>
+		 		</div>
+		  </div>
+      <div class="contacts">       
         <div class="address">
-          <h2>NЁRDS DESIGN STUDIO</h2>
-          <p>191186, Санкт-Петербург,<br> 
+          <div class="container">                                   
+          	<h2>NЁRDS DESIGN STUDIO</h2>
+          	<p>191186, Санкт-Петербург,<br> 
             ул. Б. Конюшенная, д. 19/8</p>
-          <p>тел. +7 (812) 275-75-75</p>
+          	<p>тел. +7 (812) 275-75-75</p>
+          </div>
           <a href="#" class="write-us">Напишите нам</a>
         </div>
       </div>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer">     
       <div class="container">
         <div class="footer-social">
           <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
