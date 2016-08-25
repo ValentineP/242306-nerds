@@ -7,7 +7,7 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="container">
+      <div class="container clearfix">
         <div class="logo">
           <img src="img/logo_187_75.png" width="139" height="56" alt="Дизайн-студия «Нёрдс»">
         </div>
@@ -35,23 +35,29 @@
     <main>
       <div class="slider">
         <div class="container"> 
-          <div class="slide slide-1">
-            <b class="slide-name">Долго, дорого, скрупулезно.</b>
-            <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-            <a href="#" class="know-more-btn">УЗНАТЬ БОЛЬШЕ</a>
-            <img class="slide" src="img/slide1_338_231.png" width="338" height="231" alt="">
+          <div class="slide slide-1 clearfix">
+           	<div class="slide-info">
+            	<b class="slide-name">Долго, дорого, скрупулезно.</b>
+            	<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+            	<a href="#" class="know-more-btn">УЗНАТЬ БОЛЬШЕ</a>
+            </div>
+            <img class="slide-image" src="img/slide1_338_231.png" width="338" height="231" alt="">
           </div>
           <div class="slide slide-2">
-            <b class="slide-name">Любите ли вы математику, как любим ее мы?</b>
-            <p>Нашим дизайнерам мы удаляем нейроны, ответственные за креатив, чтобы дать им возможность все просчитать</p>
-            <a href="#" class="know-more-btn">УЗНАТЬ БОЛЬШЕ</a>
-            <img class="slide" src="img/slide2_230_249.png" width="230" height="249" alt="">
+            <div class="slide-info">
+            	<b class="slide-name">Любите ли вы математику, как любим ее мы?</b>
+            	<p>Нашим дизайнерам мы удаляем нейроны, ответственные за креатив, чтобы дать им возможность все просчитать</p>
+            	<a href="#" class="know-more-btn">УЗНАТЬ БОЛЬШЕ</a>
+						</div>
+            <img class="slide-image" src="img/slide2_230_249.png" width="230" height="249" alt="">
           </div>
           <div class="slide slide-3">
-            <b class="slide-name">Только наркотики, только хардкор!</b>
-            <p>Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов</p>
-            <a href="#" class="know-more-btn">УЗНАТЬ БОЛЬШЕ</a>
-            <img class="slide" src="img/slide3_333_319.png" width="333" height="319" alt="">
+            <div class="slide-info">
+            	<b class="slide-name">Только наркотики, только хардкор!</b>
+            	<p>Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов</p>
+            	<a href="#" class="know-more-btn">УЗНАТЬ БОЛЬШЕ</a>
+						</div>
+            <img class="slide-image" src="img/slide3_333_319.png" width="333" height="319" alt="">
           </div>
           <div class="slide-switch">
             <a href="#">Слайд 1</a>
@@ -61,7 +67,7 @@
         </div>
       </div>
       <div class="container">
-        <section class="features">
+        <section class="features clearfix">
           <div class="features-item">
             <img class="feature" src="img/websites_240_124.png" width="240" height="124" alt="">
             <h2 class="features-name">ВЕБ-САЙТЫ</h2>
@@ -82,8 +88,9 @@
             насколько вы изумительны!</p>
             <a href="#" class="order-btn">ЗАКАЗАТЬ</a>
           </div>
-        </section>      
-        <div class="about-us">
+        </section>  
+        <hr>    
+        <div class="about-us clearfix">
           <div class="about-us-promo">
             <p class="lead">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
             <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
@@ -97,7 +104,7 @@
           <div class="about-us-figures">
             <div class="logo">
               <img src="img/logo_187_75.png" width="187" height="75" alt="Дизайн-студия «Нёрдс»">
-              <b>Since 2004</b>
+              <div class="age">Since 2004</div>
             </div>
             <div class="work">
               <h2>Как мы работаем:</h2>
@@ -109,17 +116,19 @@
             </div>
           </div>
         </div>
-        <div class="partners">
-          <a class="logo">
+        <hr>
+        <div class="partners clearfix">
+          <a class="partner-logo">
             <img src="img/glukhanko_b_198_37.png" width="198" height="37" alt="Disgn-studio «Glukhanko»">
           </a>
-          <a class="logo">
+          <a class="partner-logo">
             <img src="img/htmlacad_b_199_68.png" width="199" height="68" alt="HTML Academy">
           </a>
-          <a class="logo">
+          <a class="partner-logo">
             <img src="img/borod_b_209_90.png" width="209" height="90" alt="Barbershop «BORODINSKI»">
           </a>
         </div>
+        <hr>
       </div>
       <div class="contacts">
         <div class="container">
@@ -128,17 +137,19 @@
           	<p>191186, Санкт-Петербург,<br> 
             ул. Б. Конюшенная, д. 19/8</p>
           	<p>тел. +7 (812) 275-75-75</p>
+          	<a href="#" class="write-us">Напишите нам</a>
           </div>
-          <a href="#" class="write-us">Напишите нам</a>
         </div>
       </div>
     </main>
     <footer class="main-footer">
-      <div class="container">
+      <div class="container clearfix">
         <div class="footer-social">
           <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
           <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
           <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+				</div>
+        <div class="footer-slogan">
           <p class="lead">Давайте дружить, это выгодно!</p>
           <p>Скидка 10% для друзей из социальных сетей.</p>
         </div>
