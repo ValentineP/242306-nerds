@@ -2,8 +2,8 @@ body {
   font-size: 16px;
 	line-height: 22px;
 	color: #283136;
-	font-family: Roboto, sans-serif;
-	font-weight: normal;
+  font-family: 'Roboto', 'Arial', sans-serif;
+	font-weight: 500;
 	margin: 0 auto;
 }
 
@@ -85,7 +85,10 @@ h2 {
 }
 
 .slide {
+	min-height: 310px;
 	width:100%;
+	background-repeat: no-repeat;
+  background-position: 100% 10px;
 }
 
 .slide-info {
@@ -98,14 +101,58 @@ h2 {
 	width: 340px;	
 }
 
-/*Временно */
-.slide-2, .slide-3 {
-	display: none;
+.slide {
+  display: none;
 }
 
 .slider {
+	position: relative;
 	background-color: #eeeeee;
 	margin-bottom: 80px;
+}
+
+.slider input[type="radio"] {
+  display: none;
+}
+
+.slide-switch label {
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  margin: 0 3px;
+  vertical-align: top;
+  background: #ffffff;
+  border: 3px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slide-switch {
+  position: absolute;
+  bottom: 95px;
+  left: 50%;
+  width: 200px;
+  margin-left: -100px;
+  text-align: center;
+}
+
+
+#btn-1:checked ~ .slides .slide:nth-child(1) {
+  display: block;
+}
+
+#btn-2:checked ~ .slides .slide:nth-child(2) {
+  display: block;
+}
+
+#btn-3:checked ~ .slides .slide:nth-child(3) {
+  display: block;
+}
+
+#btn-1:checked ~ .slide-switch label[for="btn-1"],
+#btn-2:checked ~ .slide-switch label[for="btn-2"],
+#btn-3:checked ~ .slide-switch label[for="btn-3"] {
+  background: #c1c1c1;
 }
 
 .container {
@@ -122,6 +169,10 @@ h2 {
 	float:left;
 	width: 240px;
   margin-right: 80px;
+}
+
+.features-item p {
+	font-size: 15px;
 }
 
 .about-us {
@@ -203,13 +254,11 @@ a.partner-logo:active img {
 	float: left;
 	font-size: 16px;
 	color: #000000;
-	font-weight: bold;
 }
 
 .footer-slogan .lead {
 	font-size: 36px;
 	color: #000000;
-	font-weight: bold;
 	margin-top: 0px;
 	margin-bottom: 0px;
 }
@@ -279,4 +328,276 @@ a.social-button:active .social-btn {
 
 footer {
 	margin-bottom: 60px;
+}
+
+
+.btn {
+	display: block;
+	font-weight: 300;
+  font-size: 12px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+	border-radius: 3px;
+}
+
+.order-websites {
+	width: 140px;
+  margin-top: 25px;
+  padding: 8px 10px;
+  background-color: #fb565a;
+}
+
+a.order-websites:hover {
+	background-color: #d6494d;
+}
+
+a.order-websites:active {
+	background-color: #b63538;
+}
+
+.order-apps {
+	width: 140px;
+  margin-top: 25px;
+  padding: 8px 10px;
+  background-color: #00ca74;
+}
+
+a.order-apps:hover {
+	background-color: #01a25e;
+}
+
+a.order-apps:active {
+	background-color: #009053;
+}
+
+.order-presents {
+	width: 140px;
+  margin-top: 25px;
+  padding: 8px 10px;
+  background-color: #efc84a;
+}
+
+a.order-presents:hover {
+	background-color: #d6ae2c;
+}
+
+a.order-presents:active {
+	background-color: #c09b24;
+}
+
+.slide-name {
+	font-size: 36px;
+	line-height: 36px;
+}
+
+.slide-text {
+  width: 500px;
+  padding: 30px 0;
+}
+
+.slide p {
+  line-height: 22px;
+  color: #283136;
+}
+
+
+.slide .btn {
+  width: 220px;
+  margin-top: 25px;
+  padding: 8px 10px;
+  background-color: #fb565a;
+}
+
+a.know-more-btn:hover {
+ background-color: #d6494d;
+}
+
+a.know-more-btn:active {
+ background-color: #b63538;
+}
+
+.slide:nth-child(1) {
+  background-image: url("../img/slide1_338_231.png");
+}
+
+.slide:nth-child(2) {
+  background-image: url("../img/slide2_230_249.png");
+}
+
+.slide:nth-child(3) {
+  background-image: url("../img/slide3_333_319.png");
+}
+
+.range-controls {
+  height: 80px;
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+
+.selection-category h2 {
+	margin-bottom: 0px;
+}
+
+.price-slider {
+	position: relative;
+  height: 41px;
+	padding-top: 39px;
+	padding-right: 20px;
+  padding-left: 20px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+
+.price-slider .all-price {
+  height: 2px;
+  background: #d7dcde;
+}
+
+.price-slider .limited-price {
+  width: 70%;
+  height: 2px;
+  background: #00ca74;
+}
+
+.price-slider .price {
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  width: 4px;
+  height: 4px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  background: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+	cursor: pointer;
+}
+
+.price-slider .min-price {
+  left: 20px;
+}
+
+.price-slider .max-price {
+  left: 145px;
+}
+
+.price-fields {
+  font-size: 0;
+}
+
+.price-fields label {
+  display: inline-block;
+  width: 50%;
+  font-size: 16px;
+}
+
+.price-fields input {
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: #283136;
+	width: 60px;
+  padding: 8px 10px;
+	border: none;
+  border-radius: 5px;
+  outline: none;
+  background: #f1f1f1;
+	margin-left: 10px;
+}
+
+.range-filter {
+	margin-bottom: 45px;
+}
+
+fieldset {
+	padding: 0px;
+	border: none;
+	margin: 0px;
+}
+
+.grid-selection, .features-selection {
+	margin-left: 0px;
+	padding-left: 0px;
+	margin-top: 0px;
+}
+
+.grid-selection li, .features-selection li {
+	list-style-type: none;
+}
+
+input[type="radio"] {
+	display: none;
+}
+
+input[type="checkbox"] {
+	display: none;
+}
+
+
+.features-checkbox input[type="checkbox"] + .checkbox-indicator {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	font-size: 28px;
+	opacity: 0.2;
+	font-weight: 600;
+	line-height: 50px;
+}
+
+.features-checkbox input[type="checkbox"] + .checkbox-indicator::before {
+	position: absolute;
+	content: "\2610";
+	font-family: "symbols-nerds";
+}
+
+
+.features-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before {
+	content: "\2611";
+}
+
+.grid-radio input[type="radio"] + .radio-indicator {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	font-size: 28px;
+	opacity: 0.2;
+	font-weight: 600;
+	line-height: 50px;
+
+}
+.grid-radio input[type="radio"] + .radio-indicator::before {
+	position: absolute;
+	content: "\25cb";
+	font-family: "symbols-nerds";
+}
+
+
+.grid-radio input[type="radio"]:checked + .radio-indicator::before {
+	content: "\25cf";
+}
+
+.show-btn {
+	border: none;
+	background-color: #f1f1f1;
+	width: 160px;
+	height: 40px;
+	text-align: center;
+	margin-top: 50px;
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.show-btn:hover {
+	background-color: #e5e5e5;
+}
+
+.show-btn:active {
+	background-color: #d5d5d5;
+}
+
+.promo h1 {
+	text-align: center;
 }
