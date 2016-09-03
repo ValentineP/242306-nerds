@@ -829,6 +829,11 @@ input[type="checkbox"] {
 .promo h1 {
 	text-align: center;
 	margin-top: 10px;
+	font-weight: 500;
+}
+
+.promo .container {
+	width: 700px;
 }
 
 .sorter {
@@ -1152,4 +1157,8 @@ div.about-us-figures div.logo {
 
 .write-us-window {
 	display: none;
+}
+
+.write-us-window-show {
+	display: block;
 }
